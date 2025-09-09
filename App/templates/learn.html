@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Page</title>
+    <style>
+    
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #323131;
+        }
+
+        header {
+            background-color: #0f0c0c;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        h1 {
+            font-family: Arial, sans-serif;
+            font-size: 1.5rem;
+        }
+
+        .video-list {
+            max-width: 1000px;
+            margin: 13vh auto;
+            padding: 20px;
+            background-color: #444;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .video {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; 
+            margin-bottom: 10%;
+        }
+
+        iframe {
+            position: absolute; 
+            width: 100%;
+            height: 100%;
+            border: none;
+            margin-right:1rem; 
+        }
+
+        h3 {
+            color: white;
+            font-family: 'Garamond', Serif;
+            font-size: 1.2rem;
+            margin-top: 10px;
+            padding-bottom: 20px;
+            text-align: center; 
+            margin-left: auto; 
+            margin-right: auto; 
+            display: block; 
+        }
+
+        p {
+            font-size: 0.9rem;
+            color: #777;
+        }
+        .go-back {
+            position: fixed;
+            top: 20px;
+            left: 10px;
+            z-index: 1000;
+            background-color: #256980;
+            color: #fff;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position:fixed;
+        width:100%;
+        z-index:1000;
+        top:0;
+      }
+      a {
+        text-decoration: none;
+        text-decoration: none;
+        font-family: "Silkscreen", sans-serif;
+        color: black;
+        font-size: 20px;
+      }
+      .name {
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        font-family: "Lucida Handwriting", Cursive;
+        /* display:inline-block; */
+        display: flex;
+        align-items: center;
+      }
+
+      .logo {
+        /* position: relative; */
+        /* margin-top:10px; */
+        /* bottom : -10px;
+    right:100px; */
+        width: 7%;
+        padding-right: 7px;
+      }
+      h1{
+        position:absolute;
+        left:43vw;
+        font-family: 'Garamond', Serif;
+      }
+      .home{
+    width:50px;
+    height:45px;
+    border-radius:50%;
+    cursor:pointer;
+    margin-left:30px;
+    margin-right:30px;
+    display:inline-block;
+  }
+    </style>
+</head>
+<body>
+    <!-- <a href="#" class="go-back" onclick="history.go(-1); return false;"> Go back </a>
+    <header>
+        <h1>Learning Thru Videos</h1>
+    </header> -->
+    <header>
+        <div class="name">
+          <img src="../static/logo.png" alt="Logo" class="logo" />
+          Sign2Script
+        </div>
+        <h1>Learning Thru Videos</h1>
+        <a href="{% url 'home' %}"><img src="../static/home.jpg" alt="" class="home"></a>
+      </header>
+    <main>
+        <section class="video-list">
+            <article class="video">
+                <h3>LEARN ASL FAST | 24 common signs for everyday conversation</h3>
+                <iframe  src="https://www.youtube.com/embed/jCUaMdXsI7w?si=eg5UDacszubkbeP3" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                
+            </article>
+            <article class="video">
+                <h3>The ASL Alphabet Explained ... how to sign each letter in sign language</h3>
+                <iframe src="https://www.youtube.com/embed/7suKo9kCTus?si=Oryc58hKCOySZc1u" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                
+            </article>
+            
+            <article class="video">
+                <h3>100 Basic Signs You Should Know | Part 1: Starting Conversations in ASL</h3>
+                <iframe  src="https://www.youtube.com/embed/qa9qSPsj840?si=FLRt_oSEMqsifxRw" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                
+            </article>
+            <article class="video">
+                <h3>100 Basic Signs You Need to Know | Part 2; Food and Drinks in ASL</h3>
+                <iframe src="https://www.youtube.com/embed/jCUaMdXsI7w?si=uqBIZFIzFZxKfJ4L"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"  allowfullscreen></iframe>
+
+            </article>
+            <article class="video">
+                <h3>100 Basic Signs You Need to Know | Part 3: Time</h3>
+                <iframe src="https://www.youtube.com/embed/mqG8sWoOsBQ?si=3V4ZNlzC5bdiux64"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"  allowfullscreen></iframe>
+               
+            </article>
+            <article class="video">
+                <h3>The 25 most COMMON SIGNS in ASL| 100 Basic Signs (Part 4)</h3>
+                <iframe src= "https://www.youtube.com/embed/8R_iRx8un0c?si=O0bPq8x8G9QBNYdD"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"  allowfullscreen></iframe>
+
+            </article>
+            <article class="video">
+                <h3>ASL Basics - Learn How To Sign 13 Colors in American Sign Language</h3>
+                <iframe src="https://www.youtube.com/embed/Dsh0YWwfn-M?si=O5G1xkKS-uf9Qjpj"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"  allowfullscreen></iframe>
+
+            </article>
+            <article class="video">
+                <h3>ASL BASICS | how to sign the DAYS OF THE WEEK in American Sign Language</h3>
+                <iframe src="https://www.youtube.com/embed/CgcRdm0jfzw?si=C8M3209emAT2D5bw" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"  allowfullscreen></iframe>
+                
+            </article>
+            <article class="video">
+                <h3>MONTHS OF THE YEAR in American Sign Language | ASL Basics</h3>
+                <iframe src="https://www.youtube.com/embed/Btg392H-KVc?si=zEGOfXDNWhgU72v4"allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"  allowfullscreen></iframe>
+
+            </article>
+            <article class="video">
+                <h3>ASL NUMBERS EXPLAINED: How to sign any number PLUS math, money, ordinal numbers, and more</h3>
+                <iframe src="https://www.youtube.com/embed/sms3-XUsmv0?si=Cudku-6BQsY1Sf7L" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"  allowfullscreen></iframe>
+                
+            </article>
+            <article class="video">
+                <h3>ASL Basics | Learn How to Sign Numbers 1-20 in American Sign Language</h3>
+                <iframe src="https://www.youtube.com/embed/SP6maLr2DDI?si=yGJ26m9SZ50jKVm1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"  allowfullscreen></iframe>
+               
+            </article>
+            <article class="video">
+                <h3>ASL Basics - Learn to Count from 21-100 in American Sign Language </h3>
+                <iframe src="https://www.youtube.com/embed/uP9qw2Oc0Rc?si=di-9SC1bnMIDPpqk" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"  allowfullscreen></iframe>
+
+            </article>
+</body>
+</html>
